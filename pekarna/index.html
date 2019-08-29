@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <title>Pekarna Mokronog</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+<body>
+
+<!-- Zgornja navigacija, na levi logo, na desni meni. Navigacija je fiksirana. -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: Peru;">
+  <a class="navbar-brand" href="#"><img class="logo" src="static/img/logo.png" alt="logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Domov <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#ponudba">Ponudba</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#teren">Na terenu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#zgodba">Naša zgodba</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#kontakt">Kontakt</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" target="_blank" href="https://www.facebook.com/pekarnamokronog/"><img src="static/img/fb.png" alt="Facebook" class="fb-logo"></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Velika naslovna slika. -->
+<div id="naslovna">
+    <img src="static/img/naslovna.png" class="responsive" alt="naslovna slika">
+</div>
+
+
+<!-- Ponudba, ki vsebuje 6 boxov, urejenih z gridom. -->
+<div id="ponudba">
+    <h1 class="podnaslov">Ponudba</h1>
+
+    <div class="container">
+        <div class="row" style="margin-top: 30px;">
+
+            <!-- Začetek kode za kruh -->
+            <div class="col-sm">
+                <a data-toggle="modal" data-target="#kruhModal">
+                    <!-- thumbnail dimenzije 350x233 -->
+                    <div class="card" style="width: 350px; border-style: none">
+                        <img src="static/img/kruh-thumb.png" class="card-img-top thumb-efekt" alt="kruh-thumbnail">
+                        <div class="card-body ponudba-card">
+                            <h3 class="card-text">Kruh</h3>
+                        </div>
+                    </div>
+                </a>
+                <div class="modal fade" id="kruhModal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: Peru;">
+                                <!--<h5 class="modal-title" id="exampleModalLabel">Naslov</h5>-->
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- dimenzije slik 600x400 -->
+                                <img src="static/img/kruh-main.png" class="img-responsive" style="width: 100%;" alt="kruh-slika">
+                                <p>TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim sed faucibus turpis in. Sed tempus urna et pharetra. Risus feugiat in ante metus dictum at. Tortor condimentum lacinia quis vel eros donec ac odio tempor. Ut tristique et egestas quis. Pharetra diam sit amet nisl suscipit adipiscing bibendum est ultricies. Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. Tempus quam pellentesque nec nam aliquam sem et tortor. Nunc id cursus metus aliquam eleifend. Venenatis tellus in metus vulputate eu scelerisque felis. Fringilla ut morbi tincidunt augue interdum velit euismod.</p>
+                            </div>
+                            <!-- <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Zapri</button>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Začetek kode za pekovske izdelke -->
+            <div class="col-sm">
+                <a data-toggle="modal" data-target="#pekModal">
+                    <!-- thumbnail dimenzije 350x233 -->
+                    <div class="card" style="width: 350px; border-style: none">
+                        <img src="static/img/pek-thumb.png" class="card-img-top thumb-efekt" alt="pekovski-thumbnail">
+                        <div class="card-body ponudba-card">
+                            <h3 class="card-text">Pekovski izdelki</h3>
+                        </div>
+                    </div>
+                </a>
+                <div class="modal fade" id="pekModal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: Peru;">
+                                <!--<h5 class="modal-title" id="exampleModalLabel">Naslov</h5>-->
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- dimenzije slik 600x400 -->
+                                <img src="static/img/pek-main.png" class="img-responsive" style="width: 100%;" alt="pek-slika">
+                                <p>TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim sed faucibus turpis in. Sed tempus urna et pharetra. Risus feugiat in ante metus dictum at. Tortor condimentum lacinia quis vel eros donec ac odio tempor. Ut tristique et egestas quis. Pharetra diam sit amet nisl suscipit adipiscing bibendum est ultricies. Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. Tempus quam pellentesque nec nam aliquam sem et tortor. Nunc id cursus metus aliquam eleifend. Venenatis tellus in metus vulputate eu scelerisque felis. Fringilla ut morbi tincidunt augue interdum velit euismod.</p>
+                            </div>
+                            <!-- <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Zapri</button>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Začetek kode za potice -->
+            <div class="col-sm">
+                <a data-toggle="modal" data-target="#poticeModal">
+                    <!-- thumbnail dimenzije 350x233 -->
+                    <div class="card" style="width: 350px; border-style: none">
+                        <img src="static/img/potice-thumb.png" class="card-img-top thumb-efekt" alt="potice-thumbnail">
+                        <div class="card-body ponudba-card">
+                            <h3 class="card-text">Potice</h3>
+                        </div>
+                    </div>
+                </a>
+                <div class="modal fade" id="poticeModal" tabindex="-1" role="dialog"  aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: Peru;">
+                                <!--<h5 class="modal-title" id="exampleModalLabel">Naslov</h5>-->
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- dimenzije slik 600x400 -->
+                                <img src="static/img/potice-main.png" class="img-responsive" style="width: 100%;" alt="potice-slika">
+                                <p>TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim sed faucibus turpis in. Sed tempus urna et pharetra. Risus feugiat in ante metus dictum at. Tortor condimentum lacinia quis vel eros donec ac odio tempor. Ut tristique et egestas quis. Pharetra diam sit amet nisl suscipit adipiscing bibendum est ultricies. Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. Tempus quam pellentesque nec nam aliquam sem et tortor. Nunc id cursus metus aliquam eleifend. Venenatis tellus in metus vulputate eu scelerisque felis. Fringilla ut morbi tincidunt augue interdum velit euismod.</p>
+                            </div>
+                            <!-- <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Zapri</button>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 30px;">
+
+            <!-- Začetek kode za piškote -->
+            <div class="col-sm">
+                <a data-toggle="modal" data-target="#piskotiModal">
+                    <!-- thumbnail dimenzije 350x233 -->
+                    <div class="card" style="width: 350px; border-style: none">
+                        <img src="static/img/piskoti-thumb.png" class="card-img-top thumb-efekt" alt="piskoti-thumbnail">
+                        <div class="card-body ponudba-card">
+                            <h3 class="card-text">Piškoti</h3>
+                        </div>
+                    </div>
+                </a>
+                <div class="modal fade" id="piskotiModal" tabindex="-1" role="dialog"  aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: Peru;">
+                                <!--<h5 class="modal-title" id="exampleModalLabel">Naslov</h5>-->
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- dimenzije slik 600x400 -->
+                                <img src="static/img/piskoti-main.png" class="img-responsive" style="width: 100%;" alt="piskoti-slika">
+                                <p>TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim sed faucibus turpis in. Sed tempus urna et pharetra. Risus feugiat in ante metus dictum at. Tortor condimentum lacinia quis vel eros donec ac odio tempor. Ut tristique et egestas quis. Pharetra diam sit amet nisl suscipit adipiscing bibendum est ultricies. Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. Tempus quam pellentesque nec nam aliquam sem et tortor. Nunc id cursus metus aliquam eleifend. Venenatis tellus in metus vulputate eu scelerisque felis. Fringilla ut morbi tincidunt augue interdum velit euismod.</p>
+                            </div>
+                            <!-- <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Zapri</button>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Začetek kode za torte -->
+            <div class="col-sm">
+                <a data-toggle="modal" data-target="#torteModal">
+                    <!-- thumbnail dimenzije 350x233 -->
+                    <div class="card" style="width: 350px; border-style: none">
+                        <img src="static/img/torte-thumb.png" class="card-img-top thumb-efekt" alt="torte-thumbnail">
+                        <div class="card-body ponudba-card">
+                            <h3 class="card-text">Torte</h3>
+                        </div>
+                    </div>
+                </a>
+                <div class="modal fade" id="torteModal" tabindex="-1" role="dialog"  aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: Peru;">
+                                <!--<h5 class="modal-title" id="exampleModalLabel">Naslov</h5>-->
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- dimenzije slik 600x400 -->
+                                <img src="static/img/torte-main.png" class="img-responsive" style="width: 100%;" alt="torte-slika">
+                                <p>TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim sed faucibus turpis in. Sed tempus urna et pharetra. Risus feugiat in ante metus dictum at. Tortor condimentum lacinia quis vel eros donec ac odio tempor. Ut tristique et egestas quis. Pharetra diam sit amet nisl suscipit adipiscing bibendum est ultricies. Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. Tempus quam pellentesque nec nam aliquam sem et tortor. Nunc id cursus metus aliquam eleifend. Venenatis tellus in metus vulputate eu scelerisque felis. Fringilla ut morbi tincidunt augue interdum velit euismod.</p>
+                            </div>
+                            <!-- <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Zapri</button>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Začetek kode za pecivo -->
+            <div class="col-sm">
+                <a data-toggle="modal" data-target="#pecivoModal">
+                    <!-- thumbnail dimenzije 350x233 -->
+                    <div class="card" style="width: 350px; border-style: none">
+                        <img src="static/img/pecivo-thumb.png" class="card-img-top thumb-efekt" alt="pecivo-thumbnail">
+                        <div class="card-body ponudba-card">
+                            <h3 class="card-text">Pecivo</h3>
+                        </div>
+                    </div>
+                </a>
+                <div class="modal fade" id="pecivoModal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: Peru;">
+                                <!--<h5 class="modal-title" id="exampleModalLabel">Naslov</h5>-->
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- dimenzije slik 600x400 -->
+                                <img src="static/img/pecivo-main.png" class="img-responsive" style="width: 100%;" alt="pecivo-slika">
+                                <p>TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim sed faucibus turpis in. Sed tempus urna et pharetra. Risus feugiat in ante metus dictum at. Tortor condimentum lacinia quis vel eros donec ac odio tempor. Ut tristique et egestas quis. Pharetra diam sit amet nisl suscipit adipiscing bibendum est ultricies. Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. Tempus quam pellentesque nec nam aliquam sem et tortor. Nunc id cursus metus aliquam eleifend. Venenatis tellus in metus vulputate eu scelerisque felis. Fringilla ut morbi tincidunt augue interdum velit euismod.</p>
+                            </div>
+                            <!-- <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Zapri</button>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Na terenu, grid štirih boxov v eni vrsti -->
+<div id="teren">
+    <h1 class="podnaslov">Na terenu</h1>
+    <div class="container">
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-sm">
+                <img src="static/img/prstani.jpg" class="mini-slike" alt="prstani-slika">
+                <h4>Poroke</h4>
+                <p style="opacity: 0.5;">Poročne torte in sladka pogostitev.</p>
+            </div>
+            <div class="col-sm">
+                <img src="static/img/praznovanja.png" class="mini-slike" alt="praznovanja-slika">
+                <h4>Praznovanja</h4>
+                <p style="opacity: 0.5;">Rojstni dnevi, krsti, birme, poslovilne zabave, obletnice ...</p>
+            </div>
+            <div class="col-sm">
+                <img src="static/img/konference.png" class="mini-slike" alt="konference-slika">
+                <h4>Konference</h4>
+                <p style="opacity: 0.5;">Sladko in slano pecivo za pogostitev na poslovnih dogodkih.</p>
+            </div>
+            <div class="col-sm">
+                <img src="static/img/kombi.png" class="mini-slike" alt="kombi-slika">
+                <h4>Terenska prodaja</h4>
+                <p style="opacity: 0.5;">Naše izdelke razvažamo tudi po terenu.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- zgodba, o pekarni, na levi slika, na desni tekst -->
+<div id="zgodba">
+    <div class="zgodba-vsebina">
+        <h1 class="podnaslov">Naša zgodba</h1>
+        <div class="container">
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-md-6">
+                <img src="static/img/zgodba.png" class="zgodba-slika" alt="zgodba-slika">
+            </div>
+            <div class="col-md-6 zgodba-tekst">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed viverra ipsum nunc aliquet bibendum enim facilisis. Pharetra sit amet aliquam id. Placerat orci nulla pellentesque dignissim enim sit amet. Mollis aliquam ut porttitor leo a diam sollicitudin tempor. Lectus proin nibh nisl condimentum id.
+                Id aliquet lectus proin nibh nisl. Blandit aliquam etiam erat velit Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed viverra ipsum nunc aliquet bibendum enim facilisis. Pharetra sit amet aliquam id. Placerat orci nulla pellentesque dignissim enim sit amet. Mollis aliquam ut porttitor leo a diam sollicitudin tempor. Lectus proin nibh nisl condimentum id.
+                Id aliquet lectus proin nibh nisl. Blandit aliquam etiam erat velit sce
+                celerisque. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Nunc vel risus commodo viverra maecenas accumsan. Interdum consectetur libero id faucibus nisl tincidunt eget nullam non. Porta nibh venenatis cras sed felis eget velit. Urna nunc id cursus metus aliquam eleifend.
+            </div>
+        </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="kontakt">
+    <div class="container">
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-8">
+                <strong>Telefon: </strong>07 349 96 73<br>
+                <br>
+                <strong>E-mail: </strong>pekarstvorok@siol.net<br>
+                <br>
+                <strong>Naslov: </strong>Stari trg 11, Mokronog<br>
+                <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2774.366829182596!2d15.144642415937776!3d45.94395337910966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476505d945e0f19b%3A0x7c1179a80520ab80!2sPEKARSTVO+ROK+d.o.o.%2C+pe+Mokronog!5e0!3m2!1ssl!2ssi!4v1560112618064!5m2!1ssl!2ssi" width="400" height="300" frameborder=0 style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-4">
+                <table class="table tabela">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Ponedeljek</th>
+                            <td>5:00 - 15:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Torek</th>
+                            <td>5:00 - 15:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sreda</th>
+                            <td>5:00 - 15:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Četrtek</th>
+                            <td>5:00 - 15:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Petek</th>
+                            <td>5:00 - 15:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sobota</th>
+                            <td>5:00 - 12:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Nedelja</th>
+                            <td>zaprto</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <p>&copy; 2019 Maksimilian</p>
+</div>
+
+</body>
+</html>

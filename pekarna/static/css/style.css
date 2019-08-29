@@ -1,0 +1,103 @@
+/* PEKARNA STYLE */
+
+/* naslovna slika prilagaja velikost */
+.responsive
+{
+    width: 100%;
+    height: auto;
+}
+
+.fb-logo
+{
+    height: 30px;
+    width: 30px;
+}
+
+.fb-logo:hover
+{
+    opacity: 0.5;
+}
+
+/* stili podnaslovov */
+.podnaslov
+{
+    color: Peru;
+    text-align: center;
+}
+
+/* thumb slika se zamegli, ko je kurzor na njen */
+.thumb-efekt:hover
+{
+    opacity: 0.4;
+}
+
+#ponudba
+{
+    text-align: center;
+    padding-top: 80px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+/* Urejanje napisa pod thumbnaili pri ponudbi. */
+.ponudba-card
+{
+    background-color: Peru;
+    color: white;
+}
+
+#teren
+{
+    text-align: center;
+    padding-top: 80px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    font-family: Verdana, Geneva, sans-serif;
+    background-color: WhiteSmoke;
+}
+
+.mini-slike
+{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+#zgodba
+{
+    padding-top: 80px;
+    padding-bottom: 40px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+/* #zgodba je celoten predel, to pa samo centriran tekst */
+.zgodba-vsebina
+{
+
+}
+
+.zgodba-slika
+{
+    border-radius: 50%;
+    height: 500px;
+    width: auto;
+}
+
+.zgodba-tekst
+{
+    opacity: 0.8;
+    text-align: left;
+}
+
+#kontakt
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: Verdana, Geneva, sans-serif;
+    background-color: Peru;
+}
+
+.tabela
+{
+    width: 280px;
+
+}
