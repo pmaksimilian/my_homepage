@@ -9,7 +9,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <!-- jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet"/>
     <link rel="stylesheet" href="static/css/style.css">
 
 </head>
@@ -32,73 +35,79 @@
     <div class="jumbotron jumbotron-fluid" style="background-color: gray;">
         <div class="container-fluid kdo">
             <h1 class="display-4 naslovi">Kdo sem</h1><br>
-            <div class="row">
-                <div class="col-md-3">
+            <div class="skritiKdo" style="display: none;">
+                <div class="row">
+                    <div class="col-md-3">
 
-                </div>
-                <div class="col-md-3">
-                    <img src="static/img/me-logo.png" class="logo" alt="person logo" height="150" width="150">
-                </div>
-                <div class="col-md-4">
-                    <p class="lead desni-tekst">29-letnik iz Ljubljane, natančneje Šentvida, z zaključeno gimnazijsko
-                        izobrazbo, v fazi pisanja diplome na višji gostinski in turistični ter faliran študent
-                        računalništva. Rad imam družbo in se tudi z vsemi dobro razumem, pa naj si gre za delo ali
-                        prosti čas. </p>
-                </div>
-                <div class="col-md-2">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="static/img/me-logo.png" class="logo" alt="person logo" height="150" width="150">
+                    </div>
+                    <div class="col-md-4">
+                        <p class="lead desni-tekst">29-letnik iz Ljubljane, natančneje Šentvida, z zaključeno gimnazijsko
+                            izobrazbo, v fazi pisanja diplome na višji gostinski in turistični ter faliran študent
+                            računalništva. Rad imam družbo in se tudi z vsemi dobro razumem, pa naj si gre za delo ali
+                            prosti čas. </p>
+                    </div>
+                    <div class="col-md-2">
 
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2">
-
-                </div>
-                <div class="col-md-4">
-                    <p class="lead levi-tekst">Sem  velik ljubitelj športa, kot igralec in gledalec. Ukvarjam se s
-                        tekom, nogometom, borilnimi športi, med vikendi pa zelo rad zaidem v hribe. Tako rad, da me
-                        poleti prej najdeš v Bohinju kot na morju. Jutranji pogovor z mano pa najlažje začneš z
-                        vprašanjem: “Si videl tekmo včeraj?”</p>
-                </div>
-                <div class="col-md-3">
-
-                    <img src="static/img/sport-logo.png" class="logo" alt="ball logo" height="150" width="150">
-                </div>
-                <div class="col-md-3">
-
+                    </div>
                 </div>
                 <div class="row">
-                <div class="col-md-3">
+                    <div class="col-md-2">
 
-                </div>
-                <div class="col-md-3">
-                    <img src="static/img/cook-logo.png" class="logo" alt="cook logo" height="150" width="150">
-                </div>
-                <div class="col-md-4">
-                    <p class="lead desni-tekst">Ena od mojih večjih strasti je kuhanje. Od začetka kot domač kuhar,
-                        potem nekaj let tudi v profesionalni kuhinji. Trenutno pa sem samo še glavna zvezda piknikov in
-                        glavni kuhar v svoji družini.</p>
-                </div>
-                <div class="col-md-2">
+                    </div>
+                    <div class="col-md-4">
+                        <p class="lead levi-tekst">Sem  velik ljubitelj športa, kot igralec in gledalec. Ukvarjam se s
+                            tekom, nogometom, borilnimi športi, med vikendi pa zelo rad zaidem v hribe. Tako rad, da me
+                            poleti prej najdeš v Bohinju kot na morju. Jutranji pogovor z mano pa najlažje začneš z
+                            vprašanjem: “Si videl tekmo včeraj?”</p>
+                    </div>
+                    <div class="col-md-3">
 
+                        <img src="static/img/sport-logo.png" class="logo" alt="ball logo" height="150" width="150">
+                    </div>
+                    <div class="col-md-3">
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+
+                        </div>
+                        <div class="col-md-3">
+                            <img src="static/img/cook-logo.png" class="logo" alt="cook logo" height="150" width="150">
+                        </div>
+                        <div class="col-md-4">
+                            <p class="lead desni-tekst">Ena od mojih večjih strasti je kuhanje. Od začetka kot domač kuhar,
+                                potem nekaj let tudi v profesionalni kuhinji. Trenutno pa sem samo še glavna zvezda piknikov in
+                                glavni kuhar v svoji družini.</p>
+                        </div>
+                        <div class="col-md-2">
+
+                        </div>
+                    </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-2">
+
+                    </div>
+                    <div class="col-md-4">
+                        <p class="lead levi-tekst">Definitivno pasji človek. Redka so bila obdobja v mojem življenju, ko ob
+                            sebi nisem imel psa. Sem ponosen lastnik energične psičke Šaje, okoli katere se vrti večina
+                            mojega prostega časa.</p>
+                    </div>
+                    <div class="col-md-3">
+
+                        <img src="static/img/dog-logo.png" class="logo" alt="dog logo" height="150" width="150">
+                    </div>
+                    <div class="col-md-3">
+
+                    </div>
+                </div>
+
             </div>
-            <div class="row">
-                <div class="col-md-2">
-
-                </div>
-                <div class="col-md-4">
-                    <p class="lead levi-tekst">Definitivno pasji človek. Redka so bila obdobja v mojem življenju, ko ob
-                        sebi nisem imel psa. Sem ponosen lastnik energične psičke Šaje, okoli katere se vrti večina
-                        mojega prostega časa.</p>
-                </div>
-                <div class="col-md-3">
-
-                    <img src="static/img/dog-logo.png" class="logo" alt="dog logo" height="150" width="150">
-                </div>
-                <div class="col-md-3">
-
-                </div>
-            </div>
+            <img src="static/img/arrow-down.png" class="pokaziKdo" height="50px">
+            <img src="static/img/arrow-up.png" class="skrijKdo" height="50px" style="display: none;">
         </div>
     </div>
 
@@ -106,43 +115,47 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container-fluid kaj">
             <h1 class="display-4 naslovi">Kaj znam</h1>
-            <div class="container">
-        <div class="row">
-            <div class="col-md kvadrat">
-                <img src="static/img/smartninja.png" alt="smartninja logo" height="50">
-                <p class="opis">Pri SmartNinji sem zaključil tečaj Web Development 1, kjer sem pridobil osnovno
-                znanje o HTML, CSS, Bootstrap, Git, Python in Flask.</p><br>
-                <form action="https://www.smartninja.si/web-development-1" target="_blank" class="gumb">
-                    <button type="submit" class="btn btn-secondary btn-sm">Web Development 1</button>
-                </form><br>
-            </div>
-            <div class="col-md kvadrat">
-                <img src="static/img/github.png" alt="github logo" height="50">
-                <p class="opis">Vse svoje vaje in projekte nalagam na GitHub.</p><br>
-                <form action="https://github.com/pmaksimilian" target="_blank" class="gumb">
-                    <button type="submit" class="btn btn-secondary btn-sm">GitHub profil</button>
-                </form><br>
-            </div>
-            <div class="col-md kvadrat">
-                <img src="static/img/python.png" alt="python logo" height="50">
-                <p class="opis">Imam osnovno znanje jezika Python, ki ga izboljšujem na dnevni ravni. Na spodnji
-                    povezavi je moj končni projekt iz tečaja, spletna aplikacija za izračun dnevnega vnosa kalorij.</p><br>
-                <form action="https://my-first-calorie-calculator.herokuapp.com/" target="_blank" class="gumb">
-                    <button type="submit" class="btn btn-secondary btn-sm">Calorie Calculator</button>
-                </form><br>
-            </div>
-            <div class="col-md kvadrat">
-                <img src="static/img/bootstrap.jpg" alt="bootstrap logo" height="50">
-                <p class="opis">Pri oblikovanju spletnih strani si pomagam z Bootstrapom. Primer ene prvih mojih spletnih
-                strani je od pekarne Mokronog.</p><br>
-                <form action="pekarna/index.html" target="_blank" class="gumb">
-                    <button type="submit" class="btn btn-secondary btn-sm">Pekarna Mokronog</button>
-                </form><br>
-            </div>
+            <div class="container skritiKaj" style="display: none;">
+                <div class="row">
+                    <div class="col-md kvadrat">
+                        <img src="static/img/smartninja.png" alt="smartninja logo" height="50">
+                        <p class="opis">Pri SmartNinji sem zaključil tečaj Web Development 1, kjer sem pridobil osnovno
+                        znanje o HTML, CSS, Bootstrap, Git, Python in Flask.</p><br>
+                        <form action="https://www.smartninja.si/web-development-1" target="_blank" class="gumb">
+                            <button type="submit" class="btn btn-secondary btn-sm">Web Development 1</button>
+                        </form><br>
+                    </div>
+                    <div class="col-md kvadrat">
+                        <img src="static/img/github.png" alt="github logo" height="50">
+                        <p class="opis">Vse svoje vaje in projekte nalagam na GitHub.</p><br>
+                        <form action="https://github.com/pmaksimilian" target="_blank" class="gumb">
+                            <button type="submit" class="btn btn-secondary btn-sm">GitHub profil</button>
+                        </form><br>
+                    </div>
+                    <div class="col-md kvadrat">
+                        <img src="static/img/python.png" alt="python logo" height="50">
+                        <p class="opis">Imam osnovno znanje jezika Python, ki ga izboljšujem na dnevni ravni. Na spodnji
+                            povezavi je moj končni projekt iz tečaja, spletna aplikacija za izračun dnevnega vnosa kalorij.</p><br>
+                        <form action="https://my-first-calorie-calculator.herokuapp.com/" target="_blank" class="gumb">
+                            <button type="submit" class="btn btn-secondary btn-sm">Calorie Calculator</button>
+                        </form><br>
+                    </div>
+                    <div class="col-md kvadrat">
+                        <img src="static/img/bootstrap.jpg" alt="bootstrap logo" height="50">
+                        <p class="opis">Pri oblikovanju spletnih strani si pomagam z Bootstrapom. Primer ene prvih mojih spletnih
+                        strani je od pekarne Mokronog.</p><br>
+                        <form action="pekarna/index.html" target="_blank" class="gumb">
+                            <button type="submit" class="btn btn-secondary btn-sm">Pekarna Mokronog</button>
+                        </form><br>
+                    </div>
+                </div>
+             </div>
+            <img src="static/img/arrow-down.png" class="pokaziKaj" height="50px">
+            <img src="static/img/arrow-up.png" class="skrijKaj" height="50px" style="display: none;">
         </div>
     </div>
-        </div>
-    </div>
+
+
     <!-- kontaktiraj me -->
     <div class="jumbotron jumbotron-fluid" style="background-color: gray;">
 
@@ -150,5 +163,7 @@
             <p class="lead">Kontaktiraj me na <a id="mail" href="mailto:pavsicmaks@gmail.com">pavsicmaks@gmail.com</a></p>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
