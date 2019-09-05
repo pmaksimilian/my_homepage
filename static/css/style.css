@@ -6,6 +6,28 @@
     filter: grayscale(60%);
 }
 
+.naslovna
+{
+    position: relative;
+    text-align: center;
+}
+
+.naslovna-tekst
+{
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    display: none;
+}
+
+.naslovna-efekt
+{
+    display: none;
+}
+
 .row
 {
     margin: 40px 30px;
@@ -31,6 +53,17 @@
 {
     text-align: right;
 }
+
+.levi
+{
+    display: none;
+}
+
+.desni
+{
+    display: none;
+}
+
 
 .kdo
 {
