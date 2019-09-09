@@ -84,6 +84,7 @@
     background-color: White;
     font-size: 15px;
     padding-top: 10px;
+    display: none;
 }
 
 .opis
@@ -102,4 +103,15 @@
 #mail
 {
     color: Snow;
+}
+
+.lan-logo
+{
+    height: 20px;
+    width: 33px;
+}
+
+.lan-logo:hover
+{
+    opacity: 0.5;
 }

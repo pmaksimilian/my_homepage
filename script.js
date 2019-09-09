@@ -26,12 +26,14 @@ $(".skrijKdo").click(function() {
 
 $(".pokaziKaj").click(function() {
     $(".skritiKaj").slideDown("slow");
+    $(".kvadrat").fadeIn(2000);
     $(".skrijKaj").show();
     $(this).hide();
 });
 
 $(".skrijKaj").click(function() {
     $(".skritiKaj").slideUp("slow");
+    $(".kvadrat").hide();
     $(".pokaziKaj").show();
     $(this).hide();
 });
